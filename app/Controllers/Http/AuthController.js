@@ -58,6 +58,10 @@ class AuthController {
       return response.redirect("back");
     }
   }
+  async logout({ auth, response }) {
+    await auth.logout();
+    return response.redirect("/login");
+  }
 }
 
 module.exports = AuthController;

@@ -1,4 +1,3 @@
-"use strict";
 const { validateAll } = use("Validator");
 const users = make("App/Services/UserService");
 
